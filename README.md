@@ -12,7 +12,7 @@ Implementation of a coding challenge. Simple prototype application that makes us
 ``` mvn clean install ```
 
 4. From the installation folder navigate to `target/nulab-0.0.1/`
-5. Run the program using one of the available scripts.
+5. Run the program using one of the available scripts. Don’t forget to set the appropriate permissions (e.g. `chmod u+x start.sh`)
 
 Requirements:
 Java 8 or above.
