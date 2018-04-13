@@ -9,6 +9,8 @@ public interface DiagramReader {
 	public String getApiKey();
 	public String fetchDiagram(String diagramId) throws IOException;
 	public void read(InputStream in);
-	
+	public int outputSize();
+	public String getOutput(int index);
+	public String getOutputName(int index);
 	
 }
