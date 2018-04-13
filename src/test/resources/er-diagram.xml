@@ -1,233 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <diagram options="{&quot;pgh&quot;:4000,&quot;pgw&quot;:4000,&quot;pgm&quot;:1,&quot;pgp&quot;:&quot;lrg_4000x4000&quot;}">
-	<sheet name="Entity Relationship Diagram" uid="22277">
-		<group attr-stencil-id="00001" uid="g6zEWnVkI0e-5hCny209v2k">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#d7d7d7" fill-opacity="100.0" fill-style="singleColor" uid="fb5L7Aokowi-74FKyKqgFOi"/>
-			<text h-align="center" uid="k7XdQLPdCwi-5JPvE2gA1Oe" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<group attr-stencil-id="00001" uid="g6sVgCRiWO4-dJgfi8o3raY">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="eVSGtLkh5mW-lU0WTXvKRqg"/>
-			<text h-align="left" uid="gSMwMJSyD6M-9QJ6SbfQrYI" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<group attr-stencil-id="00001" uid="c27qgi9ROSG-6qnAkBhCdao">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="6897O94SHuI-hPHzELqpgWE"/>
-			<text h-align="center" uid="73aDeA2V0I4-6TpG6ISQzm" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<text h-align="left" uid="jp598L1Fm0a-7IJ5DhEQRUk" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">student_id</textStyle>
-		</text>
-		<text h-align="left" uid="7ugkaUNMzuw-1Qr2VOvsGAc" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">student_name</textStyle>
-		</text>
-		<text h-align="left" uid="eD6Y3jF1JeS-7i3LRLN7riW" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">student_address</textStyle>
-		</text>
-		<group attr-stencil-id="00001" uid="91VwYLNAEEs-jrtNVFSfzG6">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#b1ffdb" fill-opacity="100.0" fill-style="singleColor" uid="ehnsHNC9DGW-ckC2PeDnA4u"/>
-			<text h-align="center" uid="fjqIXk54dMI-ghKE1WFVss0" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="16" underline="false" weight="bold">Student</textStyle>
-			</text>
-		</group>
-		<group attr-stencil-id="00001" uid="6ZqJpUAASs4-5gTOfLvomkY">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#d7d7d7" fill-opacity="100.0" fill-style="singleColor" uid="GheRtwps88-58KPLhVDiUQ"/>
-			<text h-align="center" uid="goku0gJPNY-4rxaYDhbTyg" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<group attr-stencil-id="00001" uid="bnyRmF3U3KW-6eV8fECWoEs">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="lY4JyDZQooi-kldFxKK8wg0"/>
-			<text h-align="left" uid="ixLrW5A10cO-7o5fHGthXay" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<text h-align="left" uid="kGHDLOJVReu-ayFCKCrnpKQ" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">seat_number</textStyle>
-		</text>
-		<text h-align="left" uid="bEjG8YzH2gY-b0X5vez4xaG" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">seat_position</textStyle>
-		</text>
-		<group attr-stencil-id="00001" uid="70Nr4BZGKIM-57fPwIS7tKU">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#b1ffdb" fill-opacity="100.0" fill-style="singleColor" uid="3dBOKndcCcG-8UOKFtKRJ68"/>
-			<text h-align="center" uid="4E9BQXQvW0I-jtjOud7HLqg" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="16" underline="false" weight="bold">Seat</textStyle>
-			</text>
-		</group>
-		<group attr-stencil-id="00001" uid="bCUeOnC7v22-eCEIRsuv8Ac">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#d7d7d7" fill-opacity="100.0" fill-style="singleColor" uid="dUqpNhi93yU-krbeTxWYBUy"/>
-			<text h-align="center" uid="a2ePiAfHpKy-6Ft30trSnKs" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<group attr-stencil-id="00001" uid="cOk3lBVTwWO-fa6suvoVIA2">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="aPmLF2ZpkIy-78SHE5JiVye"/>
-			<text h-align="left" uid="fbZBT7TH9Ka-6htpO8pG7Yo" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<text h-align="left" uid="9M8vxpf6Viq-5d97YTJlKw6" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">course_name</textStyle>
-		</text>
-		<text h-align="left" uid="16oMzturMiY-bRIj9s6Z32e" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">student_number</textStyle>
-		</text>
-		<group attr-stencil-id="00001" uid="3zb0KjNn2US-6KVWMF7mk8E">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#b1ffdb" fill-opacity="100.0" fill-style="singleColor" uid="iGFbl75LP2K-clBNRB1kswa"/>
-			<text h-align="center" uid="geeKIPH0JyI-1fELkj8qT6u" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="16" underline="false" weight="bold">Course</textStyle>
-			</text>
-		</group>
-		<group attr-stencil-id="00001" uid="3CQmKwVM0wI-fH0Xn3VlzGy">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#d7d7d7" fill-opacity="100.0" fill-style="singleColor" uid="gJ8lpLoNY4U-ndYlMvblhQ"/>
-			<text h-align="center" uid="5q8Rf1VMBy8-lB0SKA6IZU" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<group attr-stencil-id="00001" uid="hOBXshU6vms-lMxTlDrBksY">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="l6hMGgwoNwA-8adbloOYMMA"/>
-			<text h-align="left" uid="iqlkHM4LFQq-hAyPaFFX4kW" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<group attr-stencil-id="00001" uid="aFglJGAdOgo-ercYW10bWS0">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="7oJpsEJQ402-gokaCnieuA4"/>
-			<text h-align="center" uid="kIMeF4EjqCe-bXJkG2FFy80" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<text h-align="left" uid="iXzhhZ94uAq-4mQ0PizNUA2" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">course_name</textStyle>
-		</text>
-		<text h-align="left" uid="6efhBbXXjiE-365vXGpTqUM" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">section_number</textStyle>
-		</text>
-		<text h-align="left" uid="417HRYiwZG4-gvFnS1CrxmY" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">num_registered</textStyle>
-		</text>
-		<group attr-stencil-id="00001" uid="fp8eBiJk8EK-5GE0EzecNie">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#b1ffdb" fill-opacity="100.0" fill-style="singleColor" uid="jVZh3U2bM4E-hQboxsruVia"/>
-			<text h-align="center" uid="22SbnxBRVCw-gIOyC8Q8BGI" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="16" underline="false" weight="bold">Class</textStyle>
-			</text>
-		</group>
-		<group attr-stencil-id="00001" uid="iZBf7iRP2wy-5lbcnsxFUQW">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="27JsYrit6kU-gBc9hdA12gA"/>
-			<text h-align="left" uid="cBbIXeb9xQW-2TOE9yG504c" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<text h-align="left" uid="eRDVWjNvfU4-kKsEyuJBIGQ" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">section_number</textStyle>
-		</text>
-		<group attr-stencil-id="00001" uid="1aGcXGbqGkw-9qTON1tOMwo">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#b1ffdb" fill-opacity="100.0" fill-style="singleColor" uid="6GqIjYvjxKe-12MKzk2o2aG"/>
-			<text h-align="center" uid="jBJglb9vywM-4Lo6sWJzVKW" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="16" underline="false" weight="bold">Section</textStyle>
-			</text>
-		</group>
-		<group attr-stencil-id="00001" uid="l4aCa34qasy-ldzmvaSFoWo">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#d7d7d7" fill-opacity="100.0" fill-style="singleColor" uid="7ueBFmkxDae-kGlUd8F5jqu"/>
-			<text h-align="center" uid="kOuzULvLe8e-cRa3VgXMAwQ" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<group attr-stencil-id="00001" uid="1y3NhuSxS8u-jlfkjDbX566">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="gquuBCM3Qs8-363qSLZ3S8C"/>
-			<text h-align="left" uid="72ZpfOATraA-5CO8A9EJAA6" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<group attr-stencil-id="00001" uid="2jqBRglFR2C-1xYGUa74gE0">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="eDWpQv7VBKo-7UWo94eTC0c"/>
-			<text h-align="center" uid="bUQ2f2Xqfe0-eC75w9wk6ci" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<text h-align="left" uid="dlAonu2ToAW-idWmYeykpMw" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">instructor_number</textStyle>
-		</text>
-		<text h-align="left" uid="f5W2FUmWLCa-gaNTVcTIfCa" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">instructor_name</textStyle>
-		</text>
-		<text h-align="left" uid="8KR7a8dXEcc-aCpafdLI0SM" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">instructor_faculty</textStyle>
-		</text>
-		<group attr-stencil-id="00001" uid="73JwrxenIse-hGLdW7NRgAy">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#b1ffdb" fill-opacity="100.0" fill-style="singleColor" uid="7eKcZCJUzeW-fES3qSwgbQs"/>
-			<text h-align="center" uid="3mNRmcB2BGW-20uPA17nXuQ" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="16" underline="false" weight="bold">Instructor</textStyle>
-			</text>
-		</group>
-		<group attr-stencil-id="00001" uid="5XpZa2iVlmM-kzcfF1ey8Eu">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#d7d7d7" fill-opacity="100.0" fill-style="singleColor" uid="ghhFNmtAwo8-hHJJiAORPyC"/>
-			<text h-align="center" uid="kDI4RETGNMU-bvlL9FoglU4" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<group attr-stencil-id="00001" uid="cNpMaJh7AAC-7uZ9jXC4hi2">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="dElxhTImSAO-2Dd6CRfTvG2"/>
-			<text h-align="left" uid="eR5AvIKb5em-cy54ikxkXe2" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<group attr-stencil-id="00001" uid="b8m41gUsSsc-gUeezGQEZU8">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="ei8i747kuAA-eFHrWNVieIi"/>
-			<text h-align="center" uid="8ekJ674FbOk-1FJHBvlikEy" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<text h-align="left" uid="kcwUpjJrFui-3tNGr56DoAA" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">professor_id</textStyle>
-		</text>
-		<text h-align="left" uid="dBnVgZKcBqm-aFFDlxfHkAI" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">professor_name</textStyle>
-		</text>
-		<text h-align="left" uid="gaiEAeRh164-iHqAb8oz7yc" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">professor_faculty</textStyle>
-		</text>
-		<group attr-stencil-id="00001" uid="1UlKaEReagk-efCIHBsI8gs">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#b1ffdb" fill-opacity="100.0" fill-style="singleColor" uid="8o1lmrYKcMU-eoUtGDRqr6G"/>
-			<text h-align="center" uid="29Bsseirl2A-fZy0QiH6x2A" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="16" underline="false" weight="bold">Professor</textStyle>
-			</text>
-		</group>
-		<group attr-stencil-id="00001" uid="fyf3uRQvLi2-kfWVeklNkII">
-			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#d7d7d7" fill-opacity="100.0" fill-style="singleColor" uid="4miwFKW6go0-3WbVqgxqPYO"/>
-			<text h-align="center" uid="9QG4nvfXxYS-cyBHLgtXJQ4" v-align="middle">
-				<textStyle color="#000000" font="Arial" italic="false" size="12" underline="false" weight="normal"/>
-			</text>
-		</group>
-		<text h-align="left" uid="fXquuE6uRyS-2papKu1ejW6" v-align="middle">
-			<textStyle color="#000000" font="Arial" italic="false" size="14" underline="false" weight="normal">class_date_time</textStyle>
-		</text>
-		<line border-color="#000000" border-style="normal" border-thickness="1" type="STRAIGHT" uid="fvUU0XQAPCw-bG4dIIlg7mI">
+	<sheet name="Entity Relationship Diagram" uid="2D652">
+		<line attr-edge-end="Course" attr-edge-start="Student" border-color="#000000" border-style="normal" border-thickness="1" type="STRAIGHT" uid="gsEIG4PSRGk-92XGzwihFek">
 			<start style="er_one_or_more"/>
 			<end style="er_one_or_more"/>
 		</line>
-		<line border-color="#000000" border-style="normal" border-thickness="1" type="STRAIGHT" uid="gcpZQp9LiwG-kIBcw3yKvAW">
+		<line attr-edge-end="Seat" attr-edge-start="Student" border-color="#000000" border-style="normal" border-thickness="1" type="STRAIGHT" uid="kHJIuF15Pac-6nS0Ex77Y4S">
 			<start style="er_only_one"/>
 			<end style="er_only_one"/>
 		</line>
-		<line border-color="#000000" border-style="normal" border-thickness="1" type="STRAIGHT" uid="fkr0Om1Ee4E-2X5nIugT7ys">
+		<line attr-edge-end="Class" attr-edge-start="Course" border-color="#000000" border-style="normal" border-thickness="1" type="STRAIGHT" uid="gSpybv8TOS4-hOyLbTSuuAK">
 			<start style="er_only_one"/>
 			<end style="er_one_or_more"/>
 		</line>
-		<line border-color="#000000" border-style="normal" border-thickness="1" type="STRAIGHT" uid="f30uYr0Bdmo-e6saItQX16Q">
+		<line attr-edge-end="Section" attr-edge-start="Class" border-color="#000000" border-style="normal" border-thickness="1" type="STRAIGHT" uid="9OcZy290nSU-hKJW2qq3Tig">
 			<start style="er_one_or_more"/>
 			<end style="er_only_one"/>
 		</line>
-		<line border-color="#000000" border-style="normal" border-thickness="1" type="STRAIGHT" uid="cgf4TlRn9ee-kBlq3cpPLUc">
+		<line attr-edge-end="Instructor" attr-edge-start="Course" border-color="#000000" border-style="normal" border-thickness="1" type="STRAIGHT" uid="i8jk2E7enKC-icWni48xJmg">
 			<start style="er_one_or_more"/>
 			<end style="er_only_one"/>
 		</line>
-		<line border-color="#000000" border-style="normal" border-thickness="1" type="STRAIGHT" uid="jUoWerXyCIS-tP0BbK0EP6">
+		<line attr-edge-end="Professor" attr-edge-start="Section" border-color="#000000" border-style="normal" border-thickness="1" type="STRAIGHT" uid="cTFhbSf33MK-bxvMpBLiQEk">
 			<start style="er_zero_or_many"/>
 			<end style="er_only_one"/>
 		</line>
+		<group attr-stencil-id="00378" uid="9qG26ddln2-ejERDnaAnuc">
+			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="9Z0MIjdrwsE-gObZuWTCWkU"/>
+			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="4YHuOMLMFWy-2Ef9VyuQugC"/>
+			<text uid="3PJqe7VCqcI-fUlL0bK3bG6">Student</text>
+			<text uid="aklpihInyEK-75Vfzr2nzqm">student_id</text>
+			<text uid="44BNufY8gEO-mSDwyJdGXA">student_name
+student_address</text>
+		</group>
+		<group attr-stencil-id="00378" uid="d3Lnn0gclqk-a3NVESMKNqA">
+			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="9qIlUPJNKww-jntP1YXkXuc"/>
+			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="fZTFEwGKT6S-iUaj7khaj6m"/>
+			<text uid="30THmsysFqa-9c5FHu5C92Y">Seat</text>
+			<text uid="8bcQUSNU76C-avG5lXhrOg6">seat_number</text>
+			<text uid="imaZa8jWX6i-3H1JQiSUhOY">seat_position</text>
+		</group>
+		<group attr-stencil-id="00378" uid="gatbVhdSHm2-76PIubCcx2m">
+			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="d5E2CnPWCIY-97lEk2fwdyC"/>
+			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="hN6QdM0FA4G-aDoV5aqjwAU"/>
+			<text uid="ep84DzwsxyI-73hbzRqxc4s">Course</text>
+			<text uid="49dIqyk1y00-lCq5PceTAWG">course_id</text>
+			<text uid="7NijxOLVvOe-8xESRoMjaEW">course_name
+student_number
+instructor_id</text>
+		</group>
+		<group attr-stencil-id="00378" uid="g8kZnGejewQ-9b5TBHuEhiy">
+			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="abDXlWD4Sk4-gQykg5upJms"/>
+			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="enrSmnxzG0Q-iuVrW9rF9mU"/>
+			<text uid="kYHfLqitrMm-5YkozSfYw84">Instructor</text>
+			<text uid="6yhl6hrAOs0-iZG1PF5pBYU">instructor_id</text>
+			<text uid="duYxMgHoGcS-b5aoSXg6Wca">instructor_name
+instructor_faculty</text>
+		</group>
+		<group attr-stencil-id="00378" uid="lPPx4Jn0HYc-57PY3EhBXig">
+			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="fny5Mothe0o-bncWGoft3aC"/>
+			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="2jfjrmqWpSU-29IvezmXheM"/>
+			<text uid="6gBK0EzDLGE-4k4ZwMTIBqk">Class</text>
+			<text uid="f3IgKsve2Au-jJB27dCHgOO">class_id</text>
+			<text uid="331C4Q5F3ig-cHFS5ToPoks">course_id
+section_number
+num_registered
+class_date_time</text>
+		</group>
+		<group attr-stencil-id="00378" uid="77QPEZDV3UK-76KRNcjczYu">
+			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="66CeVX31GoO-enQJJwqufm0"/>
+			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="aiv5wV86oog-jYI2cL9BJYM"/>
+			<text uid="jVUmz0S7RYA-eacGWKsg5GI">Section</text>
+			<text uid="auPq6XqfBYk-edNWJY0SY0C">section_number</text>
+			<text uid="4ZXaKvnuAMI-7obsLSoYTKG"/>
+		</group>
+		<group attr-stencil-id="00378" uid="jc4XHyBY40O-2IVs6ug9KUU">
+			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="dZYdhx8ZXMw-XynSY4A6kK"/>
+			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="dlrT5m8JLaI-ewR1gXzIDCq"/>
+			<text uid="4pJu8YrrNe4-4o2ftanZZmI">Professor</text>
+			<text uid="dfJvFSM4ko0-iPqoYqaDbG4">professor_id</text>
+			<text uid="kd6iAv70g8a-kTxeeZkuekm">professor_name
+professor_faculty</text>
+		</group>
 	</sheet>
 </diagram>

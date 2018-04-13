@@ -20,7 +20,7 @@ public abstract class NulabDiagramReader implements DiagramReader {
 					.appendPath("api/v1/diagrams")
 					.appendPath(diagramId)
 					.appendPath("contents.xml")
-					.setQueryParam("returnValues", "uid,textStyle,shapeStyle")
+					.setQueryParam("returnValues", "uid,shapeStyle")
 					.setQueryParam("apiKey", getApiKey())
 					.get();		
 	}

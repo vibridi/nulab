@@ -59,7 +59,7 @@ public class Main {
 			dow.write(new FileSystemWriter());
 			// dow.write( /* some other writer strategy, e.g. write directly into a database */);
 			
-		} catch(IOException e) {
+		} catch(Exception e) {
 			// TODO log error
 			System.exit(1);
 		}

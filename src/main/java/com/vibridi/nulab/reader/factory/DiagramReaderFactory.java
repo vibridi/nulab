@@ -7,7 +7,7 @@ import java.util.Optional;
 import com.vibridi.nulab.Messages;
 import com.vibridi.nulab.reader.DiagramReader;
 import com.vibridi.nulab.reader.DiagramType;
-import com.vibridi.nulab.reader.impl.ERDiagramReader;
+import com.vibridi.nulab.reader.er.impl.ERDiagramReader;
 
 public enum DiagramReaderFactory {
 	instance;

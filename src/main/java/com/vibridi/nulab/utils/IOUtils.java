@@ -1,6 +1,8 @@
 package com.vibridi.nulab.utils;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -26,4 +28,16 @@ public class IOUtils {
 		return response.toString();
 	}
 
+	/**
+	 * Reads the required resource basing the relative path on working base possibly set using initConfiguration
+	 * @param resourcePath relative path
+	 * @return the resource as InputStream
+	 * @throws IOException If the resource isn't available
+	 */
+	public static InputStream readResourceAsStream(String resourcePath) throws IOException {
+		File f = new File(resourcePath);
+		if (!f.exists())
+			throw new IllegalArgumentException("Specified file [" + resourcePath + "] does not exist.");
+		return new FileInputStream(f);
+	}
 }

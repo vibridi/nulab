@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Objects;
 
 import com.vibridi.nulab.writer.DiagramOutputWriter.DiagramWriterStrategy;
 
@@ -18,6 +19,7 @@ public class FileSystemWriter implements DiagramWriterStrategy {
 	}
 	
 	public FileSystemWriter(String destinationFolder) {
+		Objects.requireNonNull(destinationFolder);
 		this.destinationFolder = destinationFolder;
 	}
 
