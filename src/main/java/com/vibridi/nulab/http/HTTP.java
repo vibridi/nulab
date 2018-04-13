@@ -14,10 +14,14 @@ import java.util.StringJoiner;
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLSocketFactory;
 
+import org.apache.log4j.Logger;
+
 import com.vibridi.nulab.exceptions.HttpException;
 import com.vibridi.nulab.utils.IOUtils;
 
 public class HTTP {
+	
+	private static Logger logger = Logger.getLogger("NULAB");
 	
 	public enum Method {
 		GET,
@@ -181,11 +185,11 @@ public class HTTP {
 	 */
 	private String execute(HttpURLConnection conn) throws IOException, HttpException {
 		int responseCode = conn.getResponseCode(); // throws if it can't get the resp code
-		System.out.println("HTTP response code: " + responseCode);
+		logger.info("HTTP response code: " + responseCode);
 			
 		try {
 			String response = IOUtils.toString(conn.getInputStream(), StandardCharsets.UTF_8);
-			System.out.println(response);
+			logger.debug(response);
 			return response; // all good, here usually resp code is 200
 			
 		} catch(Exception e) { // couldn't read the input stream, try reading error stream

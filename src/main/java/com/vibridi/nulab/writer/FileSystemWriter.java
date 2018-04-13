@@ -2,9 +2,8 @@ package com.vibridi.nulab.writer;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Objects;
 
 import com.vibridi.nulab.writer.DiagramOutputWriter.DiagramWriterStrategy;
@@ -15,7 +14,11 @@ public class FileSystemWriter implements DiagramWriterStrategy {
 	private String destinationFolder;
 	
 	public FileSystemWriter() {
-		destinationFolder = this.getClass().getProtectionDomain().getCodeSource().getLocation().toString();
+		try {
+			destinationFolder = this.getClass().getProtectionDomain().getCodeSource().getLocation().toURI().getPath();
+		} catch(URISyntaxException e) {
+			throw new RuntimeException(e);
+		}
 	}
 	
 	public FileSystemWriter(String destinationFolder) {
@@ -25,14 +28,14 @@ public class FileSystemWriter implements DiagramWriterStrategy {
 
 	@Override
 	public void write(String output, String name) throws IOException {
-		File fout = new File(destinationFolder, name + "." + EXTENSION);
-		Path path = Paths.get(fout.toURI());
-
-		if(!Files.isWritable(path)) {
-			throw new IOException(String.format("Cannot write to path %s", fout.toString()));
-		} 
+		File folder = new File(destinationFolder).getParentFile();
+		File fout = new File(folder, "/sqloutput/" + name + "." + EXTENSION);
 		
-		Files.write(path, output.getBytes());
+		if(!fout.getParentFile().exists()) {
+			fout.getParentFile().mkdirs();
+		}
+			
+		Files.write(fout.toPath(), output.getBytes());
 	}
 
 }

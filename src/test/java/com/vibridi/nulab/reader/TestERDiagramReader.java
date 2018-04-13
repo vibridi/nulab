@@ -44,11 +44,11 @@ public class TestERDiagramReader {
 		assertEquals(entities.size(), 7);
 		assertEquals(entities.get(2).getName(), "Course");
 		assertEquals(entities.get(2).getPrimaryKey(), "course_id");
-		assertEquals(entities.get(3).getField(0), "instructor_name");
+		assertEquals(entities.get(3).getField(0), "instructor_id");
 		assertEquals(entities.get(4).getName(), "Class");
-		assertEquals(entities.get(4).getFields().size(), 4);
+		assertEquals(entities.get(4).getFields().size(), 5);
 		assertEquals(entities.get(6).getName(), "Professor");
-		assertEquals(entities.get(6).getField(1), "professor_faculty");
+		assertEquals(entities.get(6).getField(1), "professor_name");
 	}
 	
 	@Test

@@ -4,9 +4,13 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
+
 import com.vibridi.nulab.reader.DiagramReader;
 
 public class DiagramOutputWriter {
+	
+	private static Logger logger = Logger.getLogger("NULAB");
 	
 	/**
 	 * Defines a writer interface that allows to call {@link DiagramOutputWriter#write(DiagramWriterStrategy)} 
@@ -19,9 +23,6 @@ public class DiagramOutputWriter {
 	
 	private DiagramReader reader;
 	private DiagramWriterStrategy writer; 
-	
-	public DiagramOutputWriter() {
-	}
 	
 	public DiagramOutputWriter(DiagramReader reader) {
 		this.reader = reader;
@@ -39,7 +40,7 @@ public class DiagramOutputWriter {
 	 */
 	public void write() throws IOException {
 		if(writer == null) {
-			// TODO log warn using default writer
+			logger.warn("Using default writer.");
 		}
 		
 		this.write(writer == null ? getDefaultWriter() : writer);

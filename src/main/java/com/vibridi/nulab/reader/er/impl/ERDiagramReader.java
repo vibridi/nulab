@@ -57,10 +57,9 @@ public class ERDiagramReader extends NulabDiagramReader {
 		erEntities = findNodes(dom);
 		erEdges = findEdges(dom);
 		
-		SQLStatementGenerator generator = SQLStatementGeneratorFactory.newGenerator(dialect);
-		
 		// Basic implementation, assuming that one entity always corresponds to one DB table
 		for(EREntity entity : erEntities) {
+			SQLStatementGenerator generator = SQLStatementGeneratorFactory.newGenerator(dialect);
 			generator.createTableStatement(entity.getName());
 			
 			for(String fieldAndType : entity.getFields()) {
@@ -78,7 +77,7 @@ public class ERDiagramReader extends NulabDiagramReader {
 			// then if the second table's PK matches any field in the first table, the first table declares a FK.
 			
 			generator.declarePrimaryKey(entity.getPrimaryKey());
-			output.add(new AbstractMap.SimpleEntry<>(entity.getName(), generator.generateStatement()));
+			output.add(new AbstractMap.SimpleEntry<>(entity.getName().trim(), generator.generateStatement()));
 		}
 	}
 
@@ -201,8 +200,8 @@ public class ERDiagramReader extends NulabDiagramReader {
 			throw new DiagramException(Messages.INVALID_ER_ENTITY);
 		
 		// We know the element order
-		String name = tag.item(0).getTextContent();
-		String pk = tag.item(1).getTextContent();
+		String name = tag.item(0).getTextContent().trim();
+		String pk = tag.item(1).getTextContent().trim();
 		
 		List<String> fields = new ArrayList<>();
 		fields.add(pk);
