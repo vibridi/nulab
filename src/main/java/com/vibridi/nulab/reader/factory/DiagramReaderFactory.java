@@ -2,7 +2,6 @@ package com.vibridi.nulab.reader.factory;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 
 import com.vibridi.nulab.Messages;
 import com.vibridi.nulab.reader.DiagramReader;
