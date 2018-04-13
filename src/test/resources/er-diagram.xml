@@ -29,16 +29,17 @@
 			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="9Z0MIjdrwsE-gObZuWTCWkU"/>
 			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="4YHuOMLMFWy-2Ef9VyuQugC"/>
 			<text uid="3PJqe7VCqcI-fUlL0bK3bG6">Student</text>
-			<text uid="aklpihInyEK-75Vfzr2nzqm">student_id</text>
-			<text uid="44BNufY8gEO-mSDwyJdGXA">student_name
-student_address</text>
+			<text uid="aklpihInyEK-75Vfzr2nzqm">student_id:S</text>
+			<text uid="44BNufY8gEO-mSDwyJdGXA">student_name:S
+student_address:S</text>
 		</group>
 		<group attr-stencil-id="00378" uid="d3Lnn0gclqk-a3NVESMKNqA">
 			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="9qIlUPJNKww-jntP1YXkXuc"/>
 			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="fZTFEwGKT6S-iUaj7khaj6m"/>
 			<text uid="30THmsysFqa-9c5FHu5C92Y">Seat</text>
-			<text uid="8bcQUSNU76C-avG5lXhrOg6">seat_number</text>
-			<text uid="imaZa8jWX6i-3H1JQiSUhOY">seat_position</text>
+			<text uid="8bcQUSNU76C-avG5lXhrOg6">seat_number:N</text>
+			<text uid="imaZa8jWX6i-3H1JQiSUhOY">student_id:S
+seat_position:S</text>
 		</group>
 		<group attr-stencil-id="00378" uid="gatbVhdSHm2-76PIubCcx2m">
 			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="d5E2CnPWCIY-97lEk2fwdyC"/>
@@ -46,7 +47,7 @@ student_address</text>
 			<text uid="ep84DzwsxyI-73hbzRqxc4s">Course</text>
 			<text uid="49dIqyk1y00-lCq5PceTAWG">course_id</text>
 			<text uid="7NijxOLVvOe-8xESRoMjaEW">course_name
-student_number
+student_id
 instructor_id</text>
 		</group>
 		<group attr-stencil-id="00378" uid="g8kZnGejewQ-9b5TBHuEhiy">
@@ -62,17 +63,17 @@ instructor_faculty</text>
 			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="2jfjrmqWpSU-29IvezmXheM"/>
 			<text uid="6gBK0EzDLGE-4k4ZwMTIBqk">Class</text>
 			<text uid="f3IgKsve2Au-jJB27dCHgOO">class_id</text>
-			<text uid="331C4Q5F3ig-cHFS5ToPoks">course_id
-section_number
-num_registered
-class_date_time</text>
+			<text uid="331C4Q5F3ig-cHFS5ToPoks">course_id:N
+section_number:N
+num_registered:N
+date_time:D</text>
 		</group>
 		<group attr-stencil-id="00378" uid="77QPEZDV3UK-76KRNcjczYu">
 			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="66CeVX31GoO-enQJJwqufm0"/>
 			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="aiv5wV86oog-jYI2cL9BJYM"/>
 			<text uid="jVUmz0S7RYA-eacGWKsg5GI">Section</text>
-			<text uid="auPq6XqfBYk-edNWJY0SY0C">section_number</text>
-			<text uid="4ZXaKvnuAMI-7obsLSoYTKG"/>
+			<text uid="auPq6XqfBYk-edNWJY0SY0C">section_number:N</text>
+			<text uid="4ZXaKvnuAMI-7obsLSoYTKG">professor_id</text>
 		</group>
 		<group attr-stencil-id="00378" uid="jc4XHyBY40O-2IVs6ug9KUU">
 			<polygon border-color="#000000" border-style="normal" border-thickness="1" fill-color="#ffffff" fill-opacity="100.0" fill-style="singleColor" uid="dZYdhx8ZXMw-XynSY4A6kK"/>

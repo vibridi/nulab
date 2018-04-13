@@ -1,6 +1,7 @@
 package com.vibridi.nulab.reader.er.impl;
 
 import java.io.InputStream;
+import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -20,11 +21,13 @@ import com.vibridi.nulab.reader.NulabDiagramReader;
 import com.vibridi.nulab.reader.er.ERCardinality;
 import com.vibridi.nulab.reader.er.EREdge;
 import com.vibridi.nulab.reader.er.EREntity;
+import com.vibridi.nulab.reader.sql.SQLDialect;
+import com.vibridi.nulab.reader.sql.SQLStatementGenerator;
+import com.vibridi.nulab.reader.sql.SQLStatementGeneratorFactory;
 import com.vibridi.nulab.utils.XMLUtils;
 
 public class ERDiagramReader extends NulabDiagramReader {	
-	
-	
+
 	private static final String _vattrUid = "uid";
 	private static final String _vtagGroupText = "text";
 	private static final String _vtagStart = "start";
@@ -35,31 +38,48 @@ public class ERDiagramReader extends NulabDiagramReader {
 	private static final String _xlines = "/diagram/sheet/line";
 	private static final String _xgroups = "/diagram/sheet/group";
 	
+	// Possible improvement: this field could be configured externally and passed to the constructor at runtime
+	private SQLDialect dialect;
 	private List<EREdge> erEdges;
 	private List<EREntity> erEntities;
 	private List<Entry<String,String>> output;
 	
 	public ERDiagramReader() {
 		super();
+		this.dialect = SQLDialect.ORACLE;
 	}
 
 	@Override
 	public void read(InputStream in) throws Exception {
 		Document dom = XMLUtils.streamToDocument(in);
 		
+		output = new ArrayList<>();
 		erEntities = findNodes(dom);
 		erEdges = findEdges(dom);
 		
+		SQLStatementGenerator generator = SQLStatementGeneratorFactory.newGenerator(dialect);
+		
+		// Basic implementation, assuming that one entity always corresponds to one DB table
 		for(EREntity entity : erEntities) {
+			generator.createTableStatement(entity.getName());
 			
+			for(String fieldAndType : entity.getFields()) {
+				String[] tmp = fieldAndType.split(":", -1);
+				String dataType = generator.resolveDataType(
+						tmp.length > 1 ? tmp[1] : "", 
+						tmp.length > 2 ? Integer.parseInt(tmp[2]) : -1);
+				generator.declareField(tmp[0], dataType);
+			}
 			
+			// Improvement: use the edges to determine foreign keys.
+			// We would have to make several assumptions for this to work right here right now, so this is left out.
+			// The idea is to assume that tables may have FKs pointing only to related tables, 
+			// therefore when processing an entity, check for those connected to this one by looking at the edge ends,
+			// then if the second table's PK matches any field in the first table, the first table declares a FK.
 			
-			
-			
+			generator.declarePrimaryKey(entity.getPrimaryKey());
+			output.add(new AbstractMap.SimpleEntry<>(entity.getName(), generator.generateStatement()));
 		}
-		
-		
-		
 	}
 
 	@Override
@@ -121,11 +141,6 @@ public class ERDiagramReader extends NulabDiagramReader {
 		return edges;
 	}
 
-	/*
-
-	 * 
-	 * 
-	 */
 	private EREdge readEdge(Node node) throws DiagramException {
 		String startElUid = node.getAttributes().getNamedItem(_vattrEdgeStart).getTextContent();
 		String endElUid = node.getAttributes().getNamedItem(_vattrEdgeEnd).getTextContent();
@@ -190,12 +205,13 @@ public class ERDiagramReader extends NulabDiagramReader {
 		String pk = tag.item(1).getTextContent();
 		
 		List<String> fields = new ArrayList<>();
+		fields.add(pk);
 		String fieldsRaw = tag.item(2).getTextContent().trim();
 		if(fieldsRaw != null && !fieldsRaw.isEmpty()) {
 			fields.addAll(Arrays.asList(fieldsRaw.replaceAll("\r\n", "\n").split("\n", -1)));
 		}
 		
-		return new EREntityImpl(uid, name, pk, fields);
+		return new EREntityImpl(uid, name, pk.split(":")[0], fields);
 	}
 	
 }

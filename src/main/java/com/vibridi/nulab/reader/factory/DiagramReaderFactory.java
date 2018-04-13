@@ -18,27 +18,31 @@ public enum DiagramReaderFactory {
 		cache = new HashMap<>();
 	}
 
+	/**
+	 * Creates a new diagram reader.
+	 * @param type Type of the diagram reader
+	 * @return New reader instance or a cached one, if present.
+	 */
 	public DiagramReader forType(DiagramType type) {
 		return cache.computeIfAbsent(type, this::newReader);
 	}
 
-	
 	private DiagramReader newReader(DiagramType type) {
+		DiagramReader dr = null;
+		
 		switch(type) {
 		case CLASS:
 			throw new UnsupportedOperationException(Messages.NOT_IMPLEMENTED);
 			
 		case ER:
-			return new ERDiagramReader();
+			dr = new ERDiagramReader();
+			break;
 	
 		default:
-			new IllegalStateException(String.format(Messages.UNKNOWN_ENUM, type.name()));
+			throw new IllegalStateException(String.format(Messages.UNKNOWN_ENUM, type.name()));
 		}
 		
-		// Unreachable. 
-		// However the compiler complains about a missing return statement due to having throws inside the switch body. 
-		// Therefore by forcing a NullPointerException this acts as guard against changes done at a later time.  
-		return Optional.of((DiagramReader)null).get();
+		return dr;
 	}
 	
 	

@@ -1,7 +1,8 @@
 package com.vibridi.nulab.reader;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
+import java.io.InputStream;
 import java.util.List;
 
 import org.junit.Test;
@@ -48,6 +49,17 @@ public class TestERDiagramReader {
 		assertEquals(entities.get(4).getFields().size(), 4);
 		assertEquals(entities.get(6).getName(), "Professor");
 		assertEquals(entities.get(6).getField(1), "professor_faculty");
-		
 	}
+	
+	@Test
+	public void generateStatement() throws Exception {
+		InputStream in = TestResources.getAsStream("er-diagram.xml");
+		ERDiagramReader dr = (ERDiagramReader) DiagramReaderFactory.instance.forType(DiagramType.ER);
+		dr.read(in);
+		String s = dr.getOutput(0);
+		String benchmark = TestResources.getAsString("test-table-student.sql");
+		assertEquals(s, benchmark);
+	}
+	
+	
 }
