@@ -3,7 +3,7 @@
 Implementation of a coding challenge. Simple prototype application that makes use of Nulab’s Cacoo API.
 
 
-## Installing
+## Usage
 
 0. Install maven. 
 1. Clone this repository.
