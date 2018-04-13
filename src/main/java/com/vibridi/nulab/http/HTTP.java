@@ -37,6 +37,11 @@ public class HTTP {
 	private Map<String,String> params;
 	private Map<String,String> headers;
 	
+	/**
+	 * Creates a new HTTP builder
+	 * @param url The base URL
+	 * @return Instance of an HTTP builder
+	 */
 	public static HTTP build(String url) {
 		return new HTTP(url);
 	}
@@ -52,12 +57,23 @@ public class HTTP {
 		return resolveParams();
 	}
 	
+	/**
+	 * Appends a path to the current URL. Don't add any '/' prefix or suffix.
+	 * @param path Path element to add
+	 * @return this
+	 */
 	public HTTP appendPath(String path) {
 		sj.add(path);
 		return this;
 	}
 	
 	// ******* QUERY PARAMS ********
+	/**
+	 * Sets a query parameter, that will be later resolved to ?key=value&... and appended to this URL.
+	 * @param key Query key
+	 * @param value Query value
+	 * @return this
+	 */
 	public HTTP setQueryParam(String key, String value) {
 		params.put(key, value);
 		return this;
@@ -69,6 +85,11 @@ public class HTTP {
 	}
 	
 	// ******* HTTP HEADERS ********
+	/**
+	 * Sets the {@code Accept} header.
+	 * @param mimeType Accepted mime type
+	 * @return this
+	 */
 	public HTTP setAccept(MIMEType mimeType) {
 		headers.put("Accept", mimeType.stringValue());
 		return this;
@@ -76,40 +97,70 @@ public class HTTP {
 	
 	/**
 	 * Set the <code>Connection</code> header.
-	 * @param value
-	 * @return
+	 * @param value header value
+	 * @return this
 	 */
 	public HTTP setConnection(String value) {
 		headers.put("Connection", value);
 		return this;
 	}
 	
+	/**
+	 * Set the <code>Content-Type</code> header.
+	 * @param value header value
+	 * @return this
+	 */
 	public HTTP setContentType(String mimeType) {
 		headers.put("Content-Type", mimeType);
 		return this;
 	}
 	
+	/**
+	 * Set the <code>Host</code> header.
+	 * @param value header value
+	 * @return this
+	 */
 	public HTTP setHost(String value) {
 		headers.put("Host", value);
 		return this;
 	}
 	
+	/**
+	 * Set the <code>Origin</code> header.
+	 * @param value header value
+	 * @return this
+	 */
 	public HTTP setOrigin(String value) {
 		headers.put("Origin", value);
 		return this;
 	}
 	
+	/**
+	 * Set the <code>Pragma</code> header.
+	 * @param value header value
+	 * @return this
+	 */
 	public HTTP setPragma(String value) {
 		headers.put("Pragma", value);
 		return this;
 	}
 	
+	/**
+	 * Set the <code>User-Agent</code> header.
+	 * @param value header value
+	 * @return this
+	 */
 	public HTTP setUserAgent(String value) {
 		headers.put("User-Agent", value);
 		return this;
 	}
 	
 	// ******* GENERIC HEADERS ********
+	/**
+	 * Set any header.
+	 * @param value header value
+	 * @return this
+	 */
 	public HTTP setHeader(String key, String value) {
 		headers.put(key, value);
 		return this;
@@ -122,12 +173,21 @@ public class HTTP {
 
 	
 	// ******* HTTP METHODS ********
+	/**
+	 * Executes an HTTP GET with the current URL, headers and query parameters
+	 * @return Server's response
+	 */
 	public String get() throws IOException {
 		HttpURLConnection conn = getConnection();
 		conn.setRequestMethod(Method.GET.name());
 		return execute(conn);
 	}
 	
+	/**
+	 * Executes an HTTP POST with the current URL, headers and query parameters
+	 * @param payload The payload
+	 * @return Server's response
+	 */
 	public String post(String payload) throws IOException {
 		HttpURLConnection conn = getConnection();
 		conn.setRequestMethod(Method.POST.name());
@@ -140,6 +200,11 @@ public class HTTP {
 		return execute(conn);		
 	}
 	
+	/**
+	 * Executes an HTTP PUT with the current URL, headers and query parameters
+	 * @param payload The payload
+	 * @return Server's response
+	 */
 	public String put(String payload) throws IOException {
 		HttpURLConnection conn = getConnection();
 		conn.setRequestMethod(Method.PUT.name());
@@ -152,6 +217,10 @@ public class HTTP {
 		return execute(conn);
 	}
 	
+	/**
+	 * Executes an HTTP DELETE with the current URL, headers and query parameters
+	 * @return Server's response
+	 */
 	public String delete() throws IOException {
 		HttpURLConnection conn = getConnection();
 		conn.setRequestMethod(Method.DELETE.name());

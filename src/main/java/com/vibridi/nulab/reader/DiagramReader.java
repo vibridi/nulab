@@ -26,7 +26,7 @@ public interface DiagramReader {
 	public String fetchDiagram(String diagramId) throws IOException;
 	
 	/**
-	 * Reads a diagram into an output string.
+	 * Reads a diagram into one or more output strings.
 	 * @param in Stream containing the entire diagram input. 
 	 * @throws Exception If any exception occurs. 
 	 * The method signature throws a generic exception so that implementors aren't forced toward a particular error classification.

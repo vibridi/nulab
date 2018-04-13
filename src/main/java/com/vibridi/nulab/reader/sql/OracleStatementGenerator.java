@@ -9,7 +9,6 @@ public class OracleStatementGenerator implements SQLStatementGenerator {
 
 	private static final int DEFAULT_NUMERIC_LEN = 10;
 	private static final int DEFAULT_VARCHAR_LEN = 50;
-
 	
 	private String createTable;
 	private String primaryKey;
@@ -52,6 +51,7 @@ public class OracleStatementGenerator implements SQLStatementGenerator {
 	@Override
 	public void declareForeignKey(String foreignKey) {
 		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Foreign keys currently not supported");
 	}
 
 	@Override
